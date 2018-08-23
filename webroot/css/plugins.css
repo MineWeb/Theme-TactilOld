@@ -1,0 +1,125 @@
+#vote .card-header {
+	background-color: #022c42 !important;
+    color: white !important;
+	font-family: 'Anton', sans-serif !important;
+	border-radius: 0;
+}
+
+#vote .website {
+	margin-bottom:10px;
+}
+
+#vote .card-body{
+	font-family: 'Assistant', sans-serif;
+}
+
+#vote .subtitle {
+	font-size: 1em;
+    width: 100%;
+    color: #fff;
+	font-family: 'Assistant', sans-serif;
+    text-align: center;
+}
+
+#vote .box-center {
+	width:100%
+}
+
+#vote .title {
+	text-transform:uppercase;
+	font-size: 1.5em;
+    margin: 100px 0 0;
+	font-family: 'Paytone One', sans-serif;
+	width: 100%;
+    letter-spacing: 4px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+}
+
+#vote .vote-up {
+	color:white;
+	font-size:40px;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-size: cover !important;
+	background-position: center !important;
+	margin-bottom:50px;
+}
+
+
+
+#boutique .filtr-item {
+	width:auto;
+	height:400px;
+}
+
+#boutique {
+	padding-bottom:50px;
+}
+
+#boutique .card-header {
+	background-color: #022c42 !important;
+    color: white !important;
+	font-family: 'Anton', sans-serif !important;
+	border-radius: 0;
+
+}
+
+#buy-modal .modal-footer {
+	background-color: #022c42 !important;
+    color: white !important;
+	border-radius: 0;
+}
+
+#buy-modal .modal-body {
+	padding:0px !important;
+	
+}
+
+#buy-modal .modal-body-2 {
+	padding:1em;
+	font-family: 'Assistant', sans-serif;
+}
+
+#boutique .card-body{
+	font-family: 'Assistant', sans-serif;
+}
+
+#boutique .panel-heading{
+	background-color: #022c42 !important;
+    color: white !important;
+	font-family: 'Anton', sans-serif !important;
+	border-radius: 0;
+
+}
+
+#boutique .card-footer {
+	background-color: #022c42 !important;
+    color: white !important;
+	border-radius: 0;
+}
+
+#boutique .title {
+	text-transform:uppercase;
+	font-size: 1.5em;
+    margin: 150px 0px 0;
+	font-family: 'Paytone One', sans-serif;
+	width: 100%;
+    letter-spacing: 4px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+}
+
+#boutique .shop-up {
+	color:white;
+	font-size:40px;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-size: cover !important;
+	background-position: center !important;
+	margin-bottom:50px;
+}

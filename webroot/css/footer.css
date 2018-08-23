@@ -1,0 +1,13 @@
+#footer-by {
+	background-color:#022c42;
+}
+
+#footer-by .footer{
+	color:white;
+	padding:20px;
+	font-family: 'Assistant', sans-serif;
+}
+
+#footer-by a{
+	color: #825b3c !important;
+}

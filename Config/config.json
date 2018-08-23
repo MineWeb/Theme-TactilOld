@@ -1,0 +1,30 @@
+{
+    "name": "Tactil",
+    "slug": "Tactil",
+    "author": "nivcoo",
+    "version": "1.0.0",
+    "apiID": 0,
+    "slider": false,
+    "configurations": {
+        "accueil": {
+            "ip": "play.mineweb.fr",
+            "favicon": "",
+            "slider": {
+                "titre": "Rejoignez-nous vite !",
+                "desc": "Donne vite les quinze francs tout de suite apr\u00e8s cette sorte de superstition, dans la chemin\u00e9e inviterait \u00e0 croire qu'il."
+            },
+            "section": {
+                "img": "\/theme\/tactil\/img\/stats.png",
+                "titre": "Bienvenue dans mon monde",
+                "desc": "Hello je suis nivcoo, je raconte un peu tout pour juste enfaite completer de l'espace et voir le rendu. Apres ca marche plutot bien non ? Moi je pense que oui apres c'est que mon humble avis :p"
+            }
+        },
+        "votes": {
+            "un": "3 points boutique",
+            "deux": "2 points boutique",
+            "trois": "1 point boutique"
+        },
+        "logo": false
+    },
+    "supported": {}
+}

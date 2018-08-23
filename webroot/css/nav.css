@@ -1,0 +1,177 @@
+#navbar-up {
+	width:100%;
+	
+	background-color:#022c42
+}
+a:focus {
+	outline: none !important
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+#navbar {
+	width:100%;
+	position: fixed;
+	background-color:#022c4282
+}
+#nav {
+	position: fixed;
+	width: 100%;
+	z-index:20
+}
+#navbar .nav-link {
+	color:white;
+	font-family: 'Assistant', sans-serif;
+	text-transform: uppercase;
+	padding:20px;
+}
+
+#navbar .dropdown-menu {
+	margin-top: 11.4px;
+    border-radius: 0px;
+	background-color: #022c4282;
+	text-align: center;
+	
+}
+#navbar .dropd-menu .title-drop {
+	color:white !important;
+	font-family: 'Assistant', sans-serif;
+	text-transform: uppercase;
+	
+}
+
+#navbar .icon-nav {
+	color: white;
+    font-size: 30px;
+    border-color: white;
+	margin-top: 12px;
+}
+.s-icons {
+	color:white;
+	font-size: 20px;
+    padding-right: 10px;
+	font-family: 'Metrize-Icons';
+	
+}
+
+#navbar-up .s-icons:hover {
+	color:#825b3c;
+	-webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+#navbar .deco-box {
+	font-family: 'Anton', sans-serif;
+	color: white !important;
+	display: inline-block;
+    padding: 15px;
+	margin-left:20px;
+    border: 4px solid white;
+	cursor:pointer;
+	float:right;
+	margin-right: 20px;
+}
+
+#navbar .deco-border {
+	border-left: 1px solid black;
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+#navbar .liens {
+	color:white;
+	font-size: 15px;
+	float:right;
+	margin-top: 3px;
+	margin-right: 5px;
+	font-family: 'Metrize-Icons';
+	text-align:right;
+	
+}
+#navbar .liens-no {
+	color:white;
+	font-size: 15px;
+	float:right;
+	margin-top: 10px;
+	margin-right: 5px;
+	font-family: 'Metrize-Icons';
+	text-align:right;
+	
+}
+#navbar .login-box {
+	font-family: 'Anton', sans-serif;
+	color: white !important;
+	display: inline-block;
+    padding: 15px;
+	margin-bottom: 11px;
+	margin-left:20px;
+    border: 4px solid white;
+	cursor:pointer;
+
+}
+
+#navbar .register-box {
+	display: inline-block;
+	font-family: 'Anton', sans-serif;
+	color: white;
+    padding: 15px;
+	margin-top: 11px;
+	margin-bottom: 11px;
+	margin-left:20px;
+    background-color: #022c42;
+	border: 4px solid #022c42;
+	cursor:pointer
+}
+
+#navbar .login-box:hover {
+	background-color: white;
+	color: #02313b !important;
+	-webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+#navbar .deco-box:hover {
+	background-color: white;
+	color: #02313b !important;
+	-webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+#navbar .register-box:hover {
+	background-color: transparent;
+	color: white !important;
+	-webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+#navbar .website {
+	font-family: 'Paytone One', sans-serif;
+	color:white;
+	font-size:25px;
+	padding:20px;
+	padding-left:40px;
+	text-transform:uppercase;
+}
+
+@media (max-width: 800px) {
+	#navbar .website {
+		display:none;
+	}
+	
+	#navbar .col-4 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
