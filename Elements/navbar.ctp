@@ -21,7 +21,7 @@
 				
 				</div>
 				<div class="col-4">
-					<a class="s-icons pull-right" href="mailto:<?php  $config = ClassRegistry::init('Configuration')->find('all'); echo $config["0"]["Configuration"]["email"]; ?>"><i class="icon-chat"> Contacter nous</i></a>
+					<a class="s-icons pull-right" href="mailto:<?php  $config = ClassRegistry::init('Configuration')->find('all'); echo $config["0"]["Configuration"]["email"]; ?>"><i class="icon-chat"> Contactez-nous</i></a>
 				</div>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 	<section id="navbar">
 		<div class="row">
 			<div class="col-2 website">
-				<?= $website_name ?>
+				<a href="/" style="color:white"><?= $website_name ?></a>
 			</div>
 			<div class="col-6">
 				<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -89,7 +89,7 @@
 			<div class="col-4">
 				<?php if(!$isConnected): ?>
 					<a href="#register" data-toggle="modal" class="register-box">INSCRIPTION</a>
-					<a  href="#login" data-toggle="modal" class="login-box">CONNECTION</a>
+					<a  href="#login" data-toggle="modal" class="login-box">CONNEXION</a>
 				<?php else: ?>
 				<div class="row">
 					<div class="col-xs-12">

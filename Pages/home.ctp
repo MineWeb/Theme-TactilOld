@@ -1,6 +1,6 @@
 <section id="slider" style="background: url(<?php if(empty($theme_config['logo'])) echo'/theme/Tactil/img/banniere.png'; else echo $theme_config['logo']; ?>) no-repeat fixed top;">
 	<div class="container">
-		<div class="row">
+		<div class="row" style="margin-right: 0px;margin-left: 0px;">
 			<div class="box-center">
 				<div class="title">
 					<?= $theme_config['accueil']->slider->titre ?>
@@ -80,7 +80,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 image">
-					<img src="<?= $theme_config['accueil']->section->img ?>" class="reponsive" width="500">
+					<img src="<?= $theme_config['accueil']->section->img ?>" class="reponsive" width="100%">
 				</div>
 				<div class="col-lg-6">
 					<div class="desc-box">
