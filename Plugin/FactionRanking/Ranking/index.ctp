@@ -1,39 +1,44 @@
-<div class="jumbotron jumbotron-fluid text-center">
-	<div class="container">
-		<h1 class="display-3 title"><?= $Lang->get('RANKING_FACTION__PAGE_TITLE') ?></h1>
-	</div>
-</div>
-<div class="container">
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <?php if($cache_time) { ?>
-                        <div class="alert alert-info"><?= str_replace('{CACHE_TIME}', $cache_time, $Lang->get('RANKING_FACTION__CACHED')) ?></div>
-                    <?php } ?>
-
-                    <div id="data">
-                      <table class="table table-bordered dataTable">
-                          <thead>
-                              <tr>
-                                  <th>#</th>
-                                  <?php foreach ($affich as $key => $value) {
-                                      echo '<th>'.$Lang->get('RANKING_FACTION__AFFICH_'.strtoupper($value)).'</th>';
-                                  } ?>
-                              </tr>
-                          </thead>
-                          <tbody>
-                          </tbody>
-                      </table>
+<section id="plugins">
+    <div class="shop-up" style="background: url(/theme/Tactil/img/slider.png) no-repeat ;">
+        <div class="container">
+            <div class="row">
+                <div class="box-center">
+                    <div class="title">
+                    <?= $Lang->get('RANKING_FACTION__PAGE_TITLE') ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<br>
-<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <?php if($cache_time) { ?>
+                            <div class="alert alert-info"><?= str_replace('{CACHE_TIME}', $cache_time, $Lang->get('RANKING_FACTION__CACHED')) ?></div>
+                        <?php } ?>
+
+                        <div id="data">
+                          <table class="table table-bordered dataTable">
+                              <thead>
+                                  <tr>
+                                      <th>#</th>
+                                      <?php foreach ($affich as $key => $value) {
+                                          echo '<th>'.$Lang->get('RANKING_FACTION__AFFICH_'.strtoupper($value)).'</th>';
+                                      } ?>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <?= $this->Html->css('https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css'); ?>
 <?= $this->Html->script('https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js') ?>
 <?= $this->Html->script('https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js') ?>

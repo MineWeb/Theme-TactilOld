@@ -88,23 +88,11 @@
 <script>
     function addcomment(data) {
         var d = new Date();
-        var comment = '<div class="media"><a class="pull-left" href="#"><img class="media-object" src="<?= $this->Html->url(array('
-        controller
-        ' => '
-        API
-        ', '
-        action
-        ' => '
-        get_head_skin / ')) ?>/<?= $user['
-        pseudo
-        '] ?>/64" alt=""></a><div class="media-body"><h4 class="media-heading"><?= $user['
-        pseudo
-        '] ?> <small>' + d.getHours() + 'h' + d.getMinutes() + '</small></h4>' + data['content'] + '</div></div>';
+        var comment = '<div class="media"><a class="pull-left" href="#"><img class="media-object" src="<?= $this->Html->url(array('controller' => 'API', 'action' => 'get_head_skin/')) ?>/<?= $user['pseudo'] ?>/64" alt=""></a><div class="media-body"><h4 class="media-heading"><?= $user['pseudo'] ?> <small>'+d.getHours()+'h'+d.getMinutes()+'</small></h4>'+data['content']+'</div></div>';
         $('.add-comment').hide().html(comment).fadeIn(1500);
         $('#form-comment-fade-out').slideUp(1500);
     }
-
-    $(".comment-delete").click(function () {
+     $(".comment-delete").click(function() {
         comment_delete(this);
     });
 
@@ -113,12 +101,13 @@
         var id = $(e).attr("id");
         inputs["id"] = id;
         inputs["data[_Token][key]"] = '<?= $csrfToken ?>';
-        $.post("<?= $this->Html->url(array('controller' => 'news', 'action' => 'ajax_comment_delete')) ?>", inputs, function (data) {
-            if (data == 'true') {
-                $('#comment-' + id).slideUp(500);
-            } else {
-                console.log(data);
-            }
+        $.post("<?= $this->Html->url(array('controller' => 'news', 'action' => 'ajax_comment_delete')) ?>", inputs, function(data) {
+          if(data == 'true') {
+            $('#comment-'+id).slideUp(500);
+          } else {
+            console.log(data);
+          }
         });
     }
 </script>
+

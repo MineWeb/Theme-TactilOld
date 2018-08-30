@@ -48,7 +48,58 @@
 	margin-bottom:50px;
 }
 
+#plugins {
+	padding-bottom:50px;
+}
 
+#plugins .title {
+	text-transform:uppercase;
+	font-size: 1.5em;
+    margin: 150px 0px 0;
+	font-family: 'Paytone One', sans-serif !important;
+	width: 100%;
+    letter-spacing: 4px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+}
+
+#plugins .subtitle {
+	font-size: 1em;
+    width: 100%;
+    color: #fff;
+	font-family: 'Assistant', sans-serif !important;
+    text-align: center;
+}
+
+#plugins .shop-up {
+	color:white;
+	font-size:40px;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-size: cover !important;
+	background-position: center !important;
+	margin-bottom:50px;
+}
+
+#plugins .container {
+	font-family: 'Assistant', sans-serif;
+}
+
+#plugins .card-header {
+	background-color: #022c42 !important;
+    color: white !important;
+	font-family: 'Anton', sans-serif !important;
+	border-radius: 0;
+
+}
+
+#plugins .card-footer {
+	background-color: #022c42 !important;
+    color: white !important;
+	border-radius: 0;
+}
 
 #boutique .filtr-item {
 	width:auto;
