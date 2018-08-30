@@ -2,13 +2,13 @@
     "name": "Tactil",
     "slug": "Tactil",
     "author": "nivcoo",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "apiID": 0,
     "slider": false,
     "configurations": {
         "accueil": {
             "ip": "play.mineweb.fr",
-            "favicon": "\/\/www.allo-image.net\/stockimg\/vignette\/20287063265b87007e19760server_icon2.png",
+            "favicon": "",
             "slider": {
                 "titre": "Rejoignez-nous vite !",
                 "desc": "Donne vite les quinze francs tout de suite apr\u00e8s cette sorte de superstition, dans la chemin\u00e9e inviterait \u00e0 croire qu'il."
