@@ -88,8 +88,13 @@
 			</div>
 			<div class="col-4">
 				<?php if(!$isConnected): ?>
-					<a href="#register" data-toggle="modal" class="register-box">INSCRIPTION</a>
-					<a  href="#login" data-toggle="modal" class="login-box">CONNEXION</a>
+                    <?php if($EyPlugin->isInstalled('phpierre.signinup')) { ?>
+                        <a href="/register" class="register-box">INSCRIPTION</a>
+                        <a  href="/login" class="login-box">CONNEXION</a>
+                    <?php } else { ?>
+                        <a href="#register" data-toggle="modal" class="register-box">INSCRIPTION</a>
+                        <a  href="#login" data-toggle="modal" class="login-box">CONNEXION</a>
+                    <?php } ?>
 				<?php else: ?>
 				<div class="row">
 					<div class="col-xs-12">
