@@ -71,9 +71,9 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 									<div class="form-group">
 										<label>Favicon du site</label>
 										<p>Entrez l'url du Favicon.</p>
-										<input type="text" value="<?= $config['accueil']->favicon ?>"
+										<input type="text" value="<?= $config['favicon_url'] ?>"
 											   placeholder="Favicon url" class="form-control"
-											   name="accueil[favicon]" cols="30" rows="10">
+											   name="favicon_url" cols="30" rows="10">
 									</div>
 									<div class="form-group">
 										<label>Slider</label>
