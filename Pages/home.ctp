@@ -33,7 +33,7 @@
 					<div class="stats">
 						<i class="fa fa-users"></i><br>
 						<div class="stats-title">
-							<?= $count_visits = ClassRegistry::init('Visit')->getVisitsCount(); ?>
+							<?= $visits_count ?>
 						</div>
 						<div class="stats-subtitle">
 							Visites
@@ -44,7 +44,7 @@
 					<div class="stats">
 						<i class="fa fa-user-plus"></i><br>
 						<div class="stats-title">
-							<?= ClassRegistry::init('Users')->find('count') ?>
+							<?= $users_count ?>
 						</div>
 						<div class="stats-subtitle">
 							Inscrits
@@ -55,10 +55,10 @@
 					<div class="stats">
 						<i class="fa fa-clock-o"></i><br>
 						<div class="stats-title">
-							<?php $userLast = ClassRegistry::init('Users')->find('first', array('order' =>'created DESC')); echo $userLast['Users']['pseudo'] ?>
+							<?= $users_count_today ?>
 						</div>
 						<div class="stats-subtitle">
-							Dernier inscrit
+							Nombre d'inscrit aujourd'hui
 						</div>
 					</div>
 				</div>
@@ -120,19 +120,13 @@
 				?>
 				<div class="box-news box-news-blue" wfd-id="63">
                     <p class="title-news"><b><?= $v['News']['title'] ?></b></p>
-						<?php
-						$msg = $v['News']['content'];
-						$nmsg = substr($msg, 0, 400);
-						echo $nmsg;?>
+						<?= $this->Text->truncate($v['News']['content'], 400, array('ellipsis' => '...', 'html' => true))?>
 					</br></br><a href="<?= $this->Html->url(array('controller' => 'blog', 'action' => $v['News']['slug'])) ?>" style="float:right" class="btn btn-success">Lire la suite</a>
                 </div>
 				<?php } if ($i == 2) { ?>
 				<div class="box-news box-news-green" wfd-id="62">
                     <p class="title-news"><b><?= $v['News']['title'] ?></b></p>
-						<?php
-						$msg = $v['News']['content'];
-						$nmsg = substr($msg, 0, 300);
-						echo $nmsg; ?>
+						<?= $this->Text->truncate($v['News']['content'], 400, array('ellipsis' => '...', 'html' => true)) ?>
 					</br></br><a href="<?= $this->Html->url(array('controller' => 'blog', 'action' => $v['News']['slug'])) ?>" style="float:right" class="btn btn-info">Lire la suite</a>
                 </div>
 				

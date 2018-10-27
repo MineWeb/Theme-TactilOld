@@ -23,10 +23,7 @@
 						
 						<div class="card-body" style="overflow:hidden;">
 							<p class="card-text">
-								<?php
-									$msg = $news['News']['content'];
-									$nmsg = substr($msg, 0, 400);
-									echo $nmsg;?></p>
+								<?= $this->Text->truncate($v['News']['content'], 400, array('ellipsis' => '...', 'html' => true))?></p>
 						</div>
 						<div class="card-footer">
 							<a href="<?= $this->Html->url(array('controller' => 'blog', 'action' => $news['News']['slug'])) ?>"
