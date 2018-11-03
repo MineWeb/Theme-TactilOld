@@ -11,15 +11,15 @@
 	<link rel="icon" type="image/png" href="<?= $theme_config['favicon_url'] ?>" />
 	<!-- CSS -->
 	<?= $this->Html->css('global.css'); ?>
-	<?= $this->Html->css('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'); ?>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Assistant:800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+	<?= $this->Html->css('//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'); ?>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="//fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Assistant:800" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
 
 
 	<!-- JavaScript -->
-	<?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'); ?>
+	<?= $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'); ?>
 	<?= $this->Html->script('bootstrap.min.js') ?>
 	<?= $this->Html->script('jquery.cookie.js') ?>
 	
