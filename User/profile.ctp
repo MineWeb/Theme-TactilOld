@@ -1,14 +1,14 @@
 <section id ="profil" style="background: url(/theme/Tactil/img/bubble.png) fixed top;">
 	<div class="container">
 		<div class="title-profil">
-		<b>Profile</b>
+		<b><?= $Lang->get('USER__PROFILE') ?></b>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="card h-100">
-					<div class="card-header title"><h3>Informations personnels</h3>
+					<div class="card-header title"><h3>Informations personnelles</h3>
 					</div>
 					<div class="card-body">
 						<div class="section">
